@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>jQuery AntiScroll Plugin Demo</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
+	<style type="text/css">
+		html { height: 100%; font: normal 100%/1em Arial, Helvetica, sans-serif; }
+		body { height: 100%; }
+		section, nav { height: 50%; }
+		nav li { margin: 1em 0; }
+	</style>
+</head>
+<body>
+<header>
+	<h1>jQuery AntiScroll Plugin Demo</h1>
+</header>
+
+<section>
+	<p>Top Section</p>	
+</section>
+
+<nav>
+	<ul>
+		<li><a href="example.html">Link 1</a></li>
+		<li><a href="example.html#bottom-paragraph">Link 2 (already has a fragment identifier)</a></li>
+		<li><a href="example.html">Link 3</a></li>
+	</ul>
+</nav>
+
+<section>
+	<p id="bottom-paragraph"><a href="example.html">Bottom Section</a></p>
+</section>
+
+<footer>
+	&copy; 2013 <a href="http://www.sitekickr.com/">SiteKickr.com</a>
+</footer>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="jquery.AntiScroll.js"></script> 
+<script type="text/javascript">
+	$('section a, nav a').antiScroll();
+</script> 
+
+</body>
+</html>
